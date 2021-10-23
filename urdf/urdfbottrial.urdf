@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="urdfbottrial">
+  <link
+    name="chassis">
+    <inertial>
+      <origin
+        xyz="0 -3.46944695195361E-18 -0.00417208943994848"
+        rpy="0 0 0" />
+      <mass
+        value="0.0562300182158082" />
+      <inertia
+        ixx="1.95794362257048E-05"
+        ixy="-4.70458973389534E-21"
+        ixz="9.38925428894271E-22"
+        iyy="7.30834374312507E-05"
+        iyz="-8.32797674795901E-22"
+        izz="9.14128498637348E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfbottrial/meshes/chassis.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfbottrial/meshes/chassis.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="wheel1">
+    <inertial>
+      <origin
+        xyz="3.46944695195361E-18 -0.00733805773281983 -3.46944695195361E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.0196999694385836" />
+      <inertia
+        ixx="2.43918999567118E-06"
+        ixy="3.65611643891025E-23"
+        ixz="2.8034085859007E-39"
+        iyy="3.66056687848768E-06"
+        iyz="3.55725156806164E-39"
+        izz="2.43918999567118E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfbottrial/meshes/wheel1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfbottrial/meshes/wheel1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="fixed">
+    <origin
+      xyz="-0.045742 -0.032132 -0.012"
+      rpy="0 0 0" />
+    <parent
+      link="chassis" />
+    <child
+      link="wheel1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="wheel2">
+    <inertial>
+      <origin
+        xyz="1.38777878078145E-17 -0.00733805773281984 -3.46944695195361E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.0196999694385836" />
+      <inertia
+        ixx="2.43918999567118E-06"
+        ixy="2.50330955521017E-23"
+        ixz="2.8034085859007E-39"
+        iyy="3.66056687848768E-06"
+        iyz="3.55725156806164E-39"
+        izz="2.43918999567118E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfbottrial/meshes/wheel2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfbottrial/meshes/wheel2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="continuous">
+    <origin
+      xyz="0.045742 -0.032132 -0.012"
+      rpy="0 0 0" />
+    <parent
+      link="chassis" />
+    <child
+      link="wheel2" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="wheel3">
+    <inertial>
+      <origin
+        xyz="2.77555756156289E-17 0.00733805773281984 -1.04083408558608E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0196999694385836" />
+      <inertia
+        ixx="2.43918999567118E-06"
+        ixy="6.47480811649382E-24"
+        ixz="1.74845301978396E-22"
+        iyy="3.66056687848768E-06"
+        iyz="-4.73826940588147E-23"
+        izz="2.43918999567118E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfbottrial/meshes/wheel3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfbottrial/meshes/wheel3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="continuous">
+    <origin
+      xyz="0.045742 0.032132 -0.012"
+      rpy="0 0 0" />
+    <parent
+      link="chassis" />
+    <child
+      link="wheel3" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="wheel4">
+    <inertial>
+      <origin
+        xyz="0 0.0216029702491908 -3.46944695195361E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.0196999694385836" />
+      <inertia
+        ixx="2.43918999567118E-06"
+        ixy="9.79535672982701E-23"
+        ixz="1.71639977104755E-23"
+        iyy="3.66056687848768E-06"
+        iyz="-2.52168262175115E-23"
+        izz="2.43918999567118E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfbottrial/meshes/wheel4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfbottrial/meshes/wheel4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="continuous">
+    <origin
+      xyz="-0.045742 0.017868 -0.012"
+      rpy="0 0 0" />
+    <parent
+      link="chassis" />
+    <child
+      link="wheel4" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+</robot>
